@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+:root {
+  --bg-color: rgba(255, 72, 0, 0.927);
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.list-item {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+.link {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  /* padding: 10px; */
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.sub-nav-list {
+  position: absolute;
+  top: 61px;
+  display: block;
+  right: 8px;
+}
+
+.sub-list-item {
+  display: none;
+  list-style-type: none;
+
+  background-color: var(--bg-color);
+  padding: 20px;
+  position: relative;
+}
+.list-item:hover .sub-list-item {
+  display: block;
+}
+.two-sub-nav-list {
+  position: absolute;
+  top: 1px;
+  display: block;
+  left: 83px;
+}
+.two-sub-list-item {
+  display: none;
+  list-style-type: none;
+
+  background-color: var(--bg-color);
+  padding: 20px;
+  position: relative;
+}
+.sub-list-item:hover .two-sub-list-item {
+  display: block;
+}
+.three-sub-nav-list {
+  position: absolute;
+  top: 0px;
+  display: block;
+  left: 98px;
+}
+.three-sub-list-item {
+  display: none;
+  list-style-type: none;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+.two-sub-list-item:hover .three-sub-list-item {
+  display: block;
+}
+.one {
+  white-space: nowrap;
+}
